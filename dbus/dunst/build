@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+cat > pod2man << EOF
+#!/bin/sh
+return 0
+EOF
+
+chmod +x pod2man
+export PATH=$PATH:$PWD
+
+make PREFIX=/usr MANDIR=/usr/share DESTDIR="$1" dunst dunstify
+make PREFIX=/usr MANDIR=/usr/share DESTDIR="$1" install
+# If we make all rather than just dunst and dunstify, we will always error on the first make.
+# dunst requires us to run make with all the same rules, so we have large statements.
+# If you're unhappy with this, comment the above lines and uncomment the below ones.
+# make PREFIX=/usr MANDIR=/usr/share DESTDIR="$1" >/dev/null
+# make PREFIX=/usr MANDIR=/usr/share DESTDIR="$1"
+# make PREFIX=/usr MANDIR=/usr/share DESTDIR="$1" install

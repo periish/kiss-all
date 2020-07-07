@@ -1,0 +1,7 @@
+cmake make
+libX11
+libXau
+libXext
+libXinerama
+libXrandr
+libXrender

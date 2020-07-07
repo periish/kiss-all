@@ -1,0 +1,2 @@
+git  git+https://gitlab.gnome.org/GNOME/vte.git
+31dc883ab3b7d29139d4f940ec67be5afdf8ce1517700d41ac049536b4b8fe01  fix-W_EXITCODE.patch

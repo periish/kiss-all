@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --mandir=/usr/share/man \
+    -Dintrospection=disabled \
+    -Dman=false \
+    -Dgtk_doc=false \
+    -Dtests=false \
+    -Ddocbook_docs=disabled \
+    . output
+
+ninja -C output
+ninja -C output install

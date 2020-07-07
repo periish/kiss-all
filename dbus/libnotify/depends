@@ -1,0 +1,5 @@
+gdk-pixbuf
+glib
+libffi
+libpng
+zlib

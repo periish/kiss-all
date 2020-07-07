@@ -1,0 +1,5 @@
+dbus
+eudev
+glib
+ncurses
+readline

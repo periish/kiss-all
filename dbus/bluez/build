@@ -1,0 +1,11 @@
+#!/bin/sh -e
+./configure \
+    --prefix=/usr \
+    --exec-prefix=/usr \
+    --disable-systemd \
+    --enable-library \
+    --disable-obex \
+    --mandir=/usr/share/man
+
+make
+make DESTDIR="$1" install

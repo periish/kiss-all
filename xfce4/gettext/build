@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man \
+    --disable-acl \
+    --with-included-glib \
+    --with-included-libcroco \
+    --with-included-libxml \
+    --with-included-libunistring \
+     --disable-curses \
+     --disable-java \
+     --disable-native-java \
+     --disable-csharp
+
+make
+make DESTDIR="$1" install
