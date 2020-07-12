@@ -1,4 +1,4 @@
 gettext make
 glib
-intltool make
+intltool-fake make
 libffi
