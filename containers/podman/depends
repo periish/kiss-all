@@ -1,0 +1,6 @@
+bash
+go
+gpgme
+libassuan
+libgpg-error
+libseccomp

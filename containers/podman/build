@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+make podman
+
+make DESTDIR="$1" PREFIX=/usr install.bin
