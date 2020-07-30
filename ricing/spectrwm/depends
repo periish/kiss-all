@@ -1,6 +1,7 @@
 libX11
 libXcursor
 libXft
+libXt make
 libXrender
 libxcb
 xcb-util
