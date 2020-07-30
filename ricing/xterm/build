@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+patch -p1 < posix-ptys.patch
+
+./configure \
+    --prefix=/usr \
+    --mandir=/usr/share/man \
+    --with-x \
+    --enable-doublechars \
+    --enable-widechars \
+    --enable-freetype \
+    --enable-ansi-color \
+    --enable-88-color \
+    --enable-256-color \
+    --enable-exec-xterm \
+    --enable-sixel-graphics \
+    --enable-regis-graphics
+
+make
+make DESTDIR="$1" install
