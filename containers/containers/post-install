@@ -1,0 +1,1 @@
+chmod u+s "$KISS_ROOT/usr/bin/pseudo" "$KISS_ROOT/usr/bin/inject"

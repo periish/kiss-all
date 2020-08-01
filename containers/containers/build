@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+make
+
+mkdir -p "$1/usr/bin"
+
+for file in *; do
+    [ ! -x "$file" ] || mv -- "$file" "$1/usr/bin/$file"
+done
