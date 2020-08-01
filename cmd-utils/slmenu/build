@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+cd rafaelgg-slmenu-"$2"
+
+make
+make DESTDIR="$1" PREFIX=/usr install

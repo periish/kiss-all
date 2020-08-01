@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+# We install a custom makefile that doesn't build manpages.
+make
+make DESTDIR="$1" install
