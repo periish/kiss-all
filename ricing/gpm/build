@@ -1,9 +1,15 @@
 #!/bin/sh -e
 
-sh >&1
+for patch in *.patch; do
+	patch -p1 < "$patch"
+done
+
+./autogen.sh
 
 ./configure \
     --prefix=/usr
+
+export CFLAGS="$CFLAGS -fcommon"
 
 make
 make DESTDIR="$1" install

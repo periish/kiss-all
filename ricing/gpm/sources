@@ -1,1 +1,7 @@
 https://www.nico.schottelius.org/software/gpm/archives/gpm-1.20.7.tar.bz2
+patches/constify-format-strings.patch
+patches/error-format.patch
+patches/fix-highly-illegal-return-of-in-as-char.patch
+patches/fix-signedness-issue.patch
+patches/install-unversioned-solibrary.patch
+patches/musl-fixes.patch
