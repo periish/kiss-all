@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+sed -i 's/5/1/' src/config.h
+make
+make DESTDIR="$1" install
