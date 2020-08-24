@@ -1,0 +1,4 @@
+glib
+# There is in fact a Makefile, but
+# it only builds static libraries....
+meson

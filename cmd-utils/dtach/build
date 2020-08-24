@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+tar xf download
+cd dtach-"$2"
+
+./configure \
+    --prefix=/usr
+
+make
+
+mkdir -p "$1"/usr/bin
+cp dtach "$1"/usr/bin

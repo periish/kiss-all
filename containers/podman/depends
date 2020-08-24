@@ -1,6 +1,9 @@
 bash
+conmon
 go
 gpgme
 libassuan
 libgpg-error
 libseccomp
+runc
+slirp4netns-bin

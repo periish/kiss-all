@@ -1,0 +1,1 @@
+chmod 0775 "$KISS_ROOT"/usr/bin/runc

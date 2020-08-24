@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+make BUILDTAGS=''
+
+mkdir -p "$1"/usr/bin
+mv runc "$1"/usr/bin/runc
