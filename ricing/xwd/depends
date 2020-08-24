@@ -1,0 +1,7 @@
+libX11
+libXau
+libXt
+libxaw
+libxcb
+libxkbfile
+xorg-util-macros

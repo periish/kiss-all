@@ -1,0 +1,9 @@
+libX11
+libXau
+libXcursor
+libXfixes
+libXrender
+libpng
+libxcb
+xorg-util-macros make
+zlib

@@ -1,0 +1,11 @@
+libICE
+libSM
+libX11
+libXau
+libXext
+libXrender
+libXmu
+libXt
+libxcb
+libxkbfile
+xorg-util-macros make

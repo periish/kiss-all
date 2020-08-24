@@ -1,0 +1,21 @@
+bzip2
+expat
+fontconfig
+freetype-harfbuzz
+glib
+libICE
+libSM
+libX11
+libXau
+libXext
+libXft
+libXmu
+libXrender
+libXt
+libpng
+libxaw
+libxcb
+libxkbfile
+libxpm
+xorg-util-macros make
+zlib
