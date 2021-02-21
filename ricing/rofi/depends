@@ -1,4 +1,5 @@
 libxkbcommon
+pango
 xcb-util
 xcb-util-wm
 xcb-util-xrm
