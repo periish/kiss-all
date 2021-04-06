@@ -35,5 +35,6 @@ libxfce4util
 libxshmfence
 mesa
 pango
+perl-xml
 pixman
 xfconf
